@@ -14,12 +14,14 @@ const ApplicationForm = () => {
     const user = useSelector((state: any) => state.user);
     const [preview, setPreview] = useState(false);
     const [submit, setSubmit] = useState(false);
+
     const handlePreview = () => {
         form.validate();
         window.scrollTo({ top: 0, behavior: 'smooth' })
         if (!form.isValid()) return;
         setPreview(!preview);
     }
+    
     const handleSubmit = async() => {
         setSubmit(true);
         let resume: any = await getBase64(form.getValues().resume);
