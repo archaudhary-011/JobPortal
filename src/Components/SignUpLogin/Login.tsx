@@ -37,7 +37,7 @@ const Login = () => {
         if (valid) {
             setLoading(true);
             loginUser(data).then((res) => {
-                successNotification("Login Successful", "Redirecting to home page...");
+                successNotification("Login Successful","User Verfied");
                 dispatch(setJwt(res.jwt));
                 const decoded=jwtDecode(res.jwt);
                 dispatch(setUser({...decoded, email:decoded.sub}));

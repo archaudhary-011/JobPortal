@@ -1,4 +1,4 @@
-import { IconAnchor, IconBrandFacebook, IconBrandInstagram, IconBrandTelegram, IconBrandX, IconBrandYoutube } from "@tabler/icons-react";
+import { IconAnchor, IconBrandFacebook, IconBrandInstagram, IconBrandLinkedin, IconBrandTelegram, IconBrandX, IconBrandYoutube } from "@tabler/icons-react";
 import { footerLinks } from "../../Data/Data";
 import { useLocation } from "react-router-dom";
 import { Divider } from "@mantine/core";
@@ -14,8 +14,9 @@ const Footer = () => {
             <div className="text-sm text-mine-shaft-300">Job portal with user profiles, skill updates, certifications, work experience and admin job postings.</div>
             <div className="flex gap-3 text-bright-sun-400 [&>a]:bg-mine-shaft-900 [&>a]:p-2 [&>a]:rounded-full [&>a]:cursor-pointer hover:[&>a]:bg-mine-shaft-700">
                 <a href="https://www.instagram.com/ar.chaudhary_011/"><IconBrandInstagram /></a>
-                <a href="https://t.me/Archaudhary_1"><IconBrandTelegram /></a>
-                <a href="https://www.youtube.com"><IconBrandYoutube /></a>
+                <a href="https://www.linkedin.com/in/ar-chaudhary/"><IconBrandLinkedin /></a>
+                <a href="https://twitter.com/@AtiqurrahmanCh6"><IconBrandX/></a>
+                {/* <a href="https://www.youtube.com"><IconBrandYoutube /></a> */}
             </div>
         </div>
         {
@@ -27,10 +28,10 @@ const Footer = () => {
             </div>)
         }
     </div>
-    {/* <Divider/>
+    <Divider/>
     <div data-aos="flip-left"  data-aos-offset="0" className="font-medium text-center p-5">
-        Designed & Developed By <a className="text-bright-sun-400 hover:underline font-semibold " href="https://github.com/Code-Mars">Chandrabhan Maurya</a>
-    </div> */}
+        Designed & Developed By <a className="text-bright-sun-400 hover:underline font-semibold " href="https://github.com/archaudhary-011">Chaudhry Atique and Shaikh Sohel</a>
+    </div>
     </div>:<></>
 }
 export default Footer;
